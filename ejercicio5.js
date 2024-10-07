@@ -4,26 +4,30 @@ document.getElementById("array").textContent = people;
 
 //Eliminar Dani del array
 people.splice(1, 1);
-document.getElementById("dani_eliminado").textContent = people;
+document.getElementById("daniEliminado").textContent = people;
 
 //Eliminar a Juan del array
 people.splice(2, 1);
-document.getElementById("juan_eliminado").textContent = people;
+document.getElementById("juanEliminado").textContent = people;
 
 //Mover a "Luis" al frente de la matriz
 people.splice(1, 1);
 people.unshift("Luis");
-document.getElementById("mover_luis").textContent = people;
+document.getElementById("moverLuis").textContent = people;
 
 //Agregar mi nombre al final de la matriz
 people.push("Sara");
-document.getElementById("mi_nombre").textContent = people;
+document.getElementById("miNombre").textContent = people;
 
-// Bucle for
-for (const i=0; i<people.length; i++){
-    console.log(people);
+// Bucle --> for...of loop
+// EL RESULTADO DEL BUCLE ESTÁ IMPRESO EN LA CONSOLA !!!
+for (let person of people) { // Material de apoyo freeCodeCamp Bucles JavaScript
+    console.log(person);
+    if (person === "Maria"){ // mozilla 'break'
+        break;
+    }
+
 }
-
 
 // indexOf donde se encuentra "Maria"
 const indexOfMaria = people.indexOf("Maria");

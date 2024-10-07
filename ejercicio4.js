@@ -10,5 +10,5 @@ let student2Courses = ['Geography', 'Spanish', 'Programming'];
 const commonCourses = student1Courses.filter((assigments) => student2Courses.includes(assigments));
 console.log(commonCourses);
 
-    document.getElementById("common course").textContent = "Common courses: " + commonCourses;
+    document.getElementById("commonCourse").textContent = "Common courses: " + commonCourses;
     

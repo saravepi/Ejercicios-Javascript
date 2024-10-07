@@ -8,7 +8,8 @@ const numbers = [7, 8, 9, 10];
 console.log(numbers);
 function printOutDoubleNumbers (array) {
     const double = array.map((number) => number * 2);
-    const refDoubleNumbers=document.getElementById("double-numbers");
+    console.log(double);
+    const refDoubleNumbers=document.getElementById("doubleNumbers");
     const numberDouble=double.join(",");
     refDoubleNumbers.innerHTML=numberDouble;
 }

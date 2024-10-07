@@ -19,13 +19,10 @@ document.getElementById("mover_luis").textContent = people;
 people.push("Sara");
 document.getElementById("mi_nombre").textContent = people;
 
-// Bucle
-/*for (let i = 0; i < person.length; i++) {
-    console.log(person);
-    if (person === "Maria") {
-        break;
-    }
-}*/
+// Bucle for
+for (const i=0; i<people.length; i++){
+    console.log(people);
+}
 
 
 // indexOf donde se encuentra "Maria"
